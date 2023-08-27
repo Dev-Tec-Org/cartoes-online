@@ -20,7 +20,6 @@ const ImageCarousel = () => {
                 dynamicHeight={true}
                 swipeable={true}
                 showArrows={false}
-                infiniteLoop={true}
                 centerMode={true}
                 centerSlidePercentage={50}
             >

@@ -10,7 +10,7 @@ const Contacts = () => {
     return (
         <Box w={'full'} maxWidth="428px" my="30px" mx={'auto'}>
             <Flex justifyContent={'space-between'} mx={'20px'}>
-                <Link href='data:text/vcard,BEGIN:VCARD%0AVERSION:2.1%0AN:%20Barbeiro%0AFN:%20Marcos%20Rodrigues%0ATEL;CELL:%20(62)%2099503-3237%0AEND:VCARD'>
+                <Link href='tel:+55 62 995033237'>
                     <Box w={'max-content'}>
                         <Image
                             boxSize="50px"
@@ -23,7 +23,7 @@ const Contacts = () => {
                         />
                         <Center>
                             <Text color={'white'} fontSize={'7pt'} mt={'0.5'} mx={'auto'} fontWeight={'bold'} fontFamily={"'Fira Sans'"}>
-                                Ligar
+                                Discar
                             </Text>
                         </Center>
                     </Box>

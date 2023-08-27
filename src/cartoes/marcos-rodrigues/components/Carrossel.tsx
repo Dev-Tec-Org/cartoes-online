@@ -15,8 +15,6 @@ const ImageCarousel = () => {
                 showStatus={false}
                 showIndicators={false}
                 showThumbs={false}
-                autoPlay={true}
-                interval={1800}
                 thumbWidth={500}
                 emulateTouch={true}
                 dynamicHeight={true}

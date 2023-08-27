@@ -1,9 +1,11 @@
+import { Box, Center, Image, Text, Divider  } from "@chakra-ui/react";
+import MarcosRodrigues from './cartoes/marcos-rodrigues/index'
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Box w={"full"}>
+      <MarcosRodrigues />
+    </Box>
   );
 }
 

@@ -20,26 +20,21 @@ const ImageCarousel: React.FunctionComponent = () => {
                 dynamicHeight={true}
                 swipeable={true}
                 showArrows={false}
-                centerMode={true}
-                centerSlidePercentage={50}
+                autoPlay={true}
+                infiniteLoop={true} 
+                interval={3000}
             >
                 <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img2} alt="Image 5" style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}}/>
+                    <img src={img5} alt="Image 5" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
+                    <img src={img2} alt="Image 5" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
                 </div>
                 <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img5} alt="Image 5"  style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}}/>
+                    <img src={img1} alt="Image 1" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
+                    <img src={img4} alt="Image 2" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
                 </div>
                 <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img1} alt="Image 1"  style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}}/>
-                </div>
-                <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img2} alt="Image 2" style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}} />
-                </div>
-                <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img3} alt="Image 3" style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}} />
-                </div>
-                <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
-                    <img src={img4} alt="Image 4" style={{  borderTopLeftRadius: '10px', borderBottomRightRadius: '10px',}} />
+                    <img src={img3} alt="Image 3" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
+                    <img src={img2} alt="Image 4" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />
                 </div>
             </Carousel>
         </Box>

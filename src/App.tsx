@@ -1,12 +1,16 @@
-import { Box, Center, Image, Text, Divider  } from "@chakra-ui/react";
-import MarcosRodrigues from './cartoes/marcos-rodrigues/index'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Box } from '@chakra-ui/react';
+import AppRoutes from './Routes';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Box w={"full"}>
-      <MarcosRodrigues />
-    </Box>
+    <Router>
+      <Box w={'full'}>
+        <AppRoutes />
+      </Box>
+    </Router>
   );
-}
+};
 
 export default App;

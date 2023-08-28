@@ -8,7 +8,7 @@ import img3 from '../../../assets/marcos-rodrigues/carrossel/img3.jpg';
 import img4 from '../../../assets/marcos-rodrigues/carrossel/img4.jpg';
 import img5 from '../../../assets/marcos-rodrigues/carrossel/img5.jpg';
 
-const ImageCarousel = () => {
+const ImageCarousel: React.FunctionComponent = () => {
     return (
         <Box w={'full'} maxWidth="428px" my="2">
             <Carousel

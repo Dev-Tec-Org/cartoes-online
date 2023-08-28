@@ -1,10 +1,11 @@
+import React from 'react';
 import { Box, Center, Image, Text, Divider, Flex, Link } from "@chakra-ui/react";
 import topo from "../../assets/marcos-rodrigues/Topo.jpg";
 import ImageCarousel from './components/Carrossel'
 import Contacts from "./components/Contacts";
 import agenda from "../../assets/marcos-rodrigues/Agenda.svg";
 
-function MarcosRodrigues() {
+const MarcosRodrigues: React.FunctionComponent = () =>  {
     let responsive = '340px'
     const h = () => {
         const tamanhoTela = window.innerHeight;

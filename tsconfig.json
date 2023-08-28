@@ -17,6 +17,5 @@
     "incremental": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/cartoes/marcos-rodrigues/*tsx"],
-  "exclude": ["node_modules"],
-  "base":"/cartoes-online"
+  "exclude": ["node_modules"]
 }

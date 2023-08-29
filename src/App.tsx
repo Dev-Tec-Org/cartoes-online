@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Box w={"full"} h={"100vh"} backgroundColor={"blackAlpha.800"} >
-        <Box w={"max-content"} h={"max-content"} mx={"auto"} py={"3%"}>
+        <Box w={"max-content"} h={"max-content"} mx={"auto"}>
           <AppRoutes />
         </Box>
       </Box>

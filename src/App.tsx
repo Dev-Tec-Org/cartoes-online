@@ -6,10 +6,8 @@ import AppRoutes from './Routes';
 const App: React.FC = () => {
   return (
     <Router>
-      <Box w={"full"} h={"100vh"} backgroundColor={"blackAlpha.800"} >
-        <Box w={"max-content"} h={"max-content"} mx={"auto"}>
+      <Box w={"full"}>
           <AppRoutes />
-        </Box>
       </Box>
     </Router>
   );

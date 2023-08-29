@@ -20,9 +20,6 @@ const ImageCarousel: React.FunctionComponent = () => {
                 dynamicHeight={true}
                 swipeable={true}
                 showArrows={false}
-                autoPlay={true}
-                infiniteLoop={true} 
-                interval={3000}
             >
                 <div style={{ margin: '0 10px', display: 'flex', justifyContent: 'space-between' }}>
                     <img src={img5} alt="Image 5" style={{ borderTopLeftRadius: '10px', borderBottomRightRadius: '10px', width: "48%" }} />

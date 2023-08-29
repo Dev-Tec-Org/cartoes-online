@@ -29,7 +29,7 @@ const Contacts = () => {
                     </Box>
                 </Link>
 
-                <Link href='https://api.whatsapp.com/send?phone=5562995033237&text=Ol%C3%A1,%20caso%20deseje%20agendar%20um%20hor%C3%A1rio,%20por%20favor%20acessar:%20https://minhaagenda.digital/MR.Barbearia'>
+                <Link href='https://api.whatsapp.com/send?phone=5562995033237&text=Ol%C3%A1%20MR,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!'>
                     <Box w={'max-content'}>
                         <Image
                             boxSize="50px"

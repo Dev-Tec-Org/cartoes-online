@@ -4,12 +4,25 @@ import topo from "../../assets/marcos-rodrigues/Topo.jpg";
 import ImageCarousel from './components/Carrossel'
 import Contacts from "./components/Contacts";
 import agenda from "../../assets/marcos-rodrigues/Agenda.svg";
+import compartilhar from "../../assets/marcos-rodrigues/Share.png";
 
-const MarcosRodrigues: React.FunctionComponent = () =>  {
-    let responsive = '340px'
+const MarcosRodrigues: React.FunctionComponent = () => {
+    const handleShare = async () => {
+        try {
+            await navigator.share({
+                title: 'Marcos Rodrigues Barbeiro',
+                text: '',
+                url: 'https://onlinecartoes.com/marcos-rodrigues',
+            });
+            console.log('Conteúdo compartilhado com sucesso!');
+        } catch (error) {
+            console.error('Erro ao compartilhar:', error);
+        }
+    };
+
+    let responsive = '340px';
     const h = () => {
         const tamanhoTela = window.innerHeight;
-        console.log(tamanhoTela)
 
         if (tamanhoTela >= 700 && tamanhoTela < 800) {
             responsive = '250px';
@@ -26,6 +39,9 @@ const MarcosRodrigues: React.FunctionComponent = () =>  {
     h();
     return (
         <Box maxW={"428px"} h={'full'} position={'relative'}>
+            <Box position={"absolute"} marginLeft={"90%"} top={'10px'} cursor={'pointer'} onClick={() => {handleShare()}}>
+                <Image src={compartilhar} alt='Compartilhar' w={"30px"} h={"30px"} />
+            </Box>
 
             <Box w={'full'} id="1">
                 <Image src={topo} alt="Imagem de apresentação" />

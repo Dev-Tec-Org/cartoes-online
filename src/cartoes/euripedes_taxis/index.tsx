@@ -71,12 +71,12 @@ const EuripedesTaxis = () => {
                     </Box>
                 </Link>
 
-                <Link href="href='tel:+55 62 985819490">
+                <Link href="tel:+55 62 985819490">
                     <Box>
                         <Flex border={"1px"} borderColor={"green.200"} w={"max-content"} p={"1.5"} borderRadius={"full"} mt={"-2"} mx={"auto"}>
                             <Image src={fone} w={"35px"} />
                             <Box ml={"2"}>
-                                <Text fontSize={"10px"}>WhatsApp</Text>
+                                <Text fontSize={"10px"}>Ligar</Text>
                                 <Text fontSize={"16px"}>(62) 9-8581-9490</Text>
                             </Box>
                         </Flex>

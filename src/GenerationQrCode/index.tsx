@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Box, Input, Button, Center, Link } from '@chakra-ui/react';
+import { Box, Input, Button, Center, Link, Text } from '@chakra-ui/react';
 import QRCode from 'qrcode.react';
 import html2canvas from 'html2canvas';
 
 function GenerationQrCode() {
     const [link, setLink] = useState('');
     const [qrCodeData, setQrCodeData] = useState('');
+    const [qrCodeSize, setQrCodeSize] = useState(128);
 
     const generateQRCode = () => {
         setQrCodeData(link);
@@ -31,12 +32,19 @@ function GenerationQrCode() {
                     onChange={(e) => setLink(e.target.value)}
                     mb={4}
                 />
+                <Text>Selecione o tamanho do QR Code:</Text>
+                <Input
+                    type="number"
+                    value={qrCodeSize}
+                    onChange={(e) => setQrCodeSize(parseInt(e.target.value))}
+                    mb={4}
+                />
                 <Button colorScheme="teal" onClick={generateQRCode}>
                     Gerar QR Code
                 </Button>
                 {qrCodeData && (
                     <Box mt={4}>
-                        <QRCode id="qrcode" value={qrCodeData} />
+                        <QRCode id="qrcode" value={qrCodeData} size={qrCodeSize} />
                     </Box>
                 )}
                 {qrCodeData && (
